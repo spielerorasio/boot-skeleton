@@ -1,0 +1,19 @@
+docker run --name hpmc redis -d -it  -p 6379:6379 redis:latest
+docker run --name hpmcPostgres -it -p 5432:5432  -e POSTGRES_USER=hpmc -e POSTGRES_PASSWORD=password -e POSTGRES_DB=hpmc -d postgres:9.3
+docker run -d -it  -p 5672:5672   -p 15672:15672   --hostname hpmc-rabbit --name hpmc-rabbit  -e RABBITMQ_ERLANG_COOKIE='ABCDABCD'  -e RABBITMQ_DEFAULT_USER=hpmc -e RABBITMQ_DEFAULT_PASS=password  rabbitmq:3-management  
+
+
+
+
+we need
+spring-boot-starter-mail
+spring-boot-starter-redis
+
+
+
+we have 
+spring-boot-starter-amqp
+spring-boot-starter-data-jpa
+spring-boot-starter-test
+spring-boot-starter-logging                      Logback
+
