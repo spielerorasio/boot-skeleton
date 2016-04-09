@@ -10,13 +10,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_5_RELEASE.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_7_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_7_3.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/docker/docker_commands.txt" afterPath="$PROJECT_DIR$/src/main/docker/docker_commands.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hp/mobile/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/hp/mobile/Application.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hp/mobile/redis/CacheClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/hp/mobile/redis/CacheClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hp/mobile/redis/CacheClientImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/hp/mobile/redis/CacheClientImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hp/mobile/session/replication/HttpSessionConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/hp/mobile/session/replication/HttpSessionConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/readme" afterPath="$PROJECT_DIR$/src/main/resources/readme" />
     </list>
     <ignored path="boot-skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,48 +35,7 @@
     <favorites_list name="boot-skeleton" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/docker/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/readme">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="27" column="110" selection-start-line="27" selection-start-column="110" selection-end-line="27" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker_commands.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/docker/docker_commands.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -168,100 +124,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boot-skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
@@ -577,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460195670099</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix comments">
+      <created>1460197376941</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1460197376941</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -658,7 +528,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <confirmMoveToFailedCommit value="1" />
     <MESSAGE value="add session replication over redis&#10;add parameters to properties file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add session replication over redis&#10;add parameters to properties file" />
+    <MESSAGE value="fix comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
