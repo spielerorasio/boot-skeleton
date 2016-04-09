@@ -15,3 +15,14 @@ SET DOCKER_TLS_VERIFY=1
 SET DOCKER_HOST=tcp://192.168.99.100:2376
 SET DOCKER_CERT_PATH=C:\Users\<user>\.docker\machine\machines\default
 SET DOCKER_MACHINE_NAME=default
+
+mvn clean install spring-boot:run --server.address=192.168.99.100
+java  -jar target\boot-skeleton-1.0-SNAPSHOT.jar --server.address=192.168.99.100
+java  -jar target\boot-skeleton-1.0-SNAPSHOT.jar --server.address=localhost --postgres.address=192.168.99.100 --redis.address=192.168.99.100 --rabbitmq.address=192.168.99.100
+
+
+mvn package docker:build
+docker push hpe-mobile-boot/boot-skeleton
+#after the push
+#thanks to relaxed binding  of boot we can used underscore
+docker run -e "SERVER_ADDRESS=192.168.99.100"  -e "SERVER_PORT=8080"  -p 8080:8080 -it hpe-mobile-boot/boot-skeleton
