@@ -13,6 +13,7 @@
         <!--spring boot can take java version recommendation from here-->
         <java.version>1.8</java.version>
         <docker.image.prefix>hpe-mobile-boot</docker.image.prefix>
+        <docker.hub.repository>orasio</docker.hub.repository>
     </properties>
     <!-- Inherit defaults from Spring Boot -->
     <parent>
@@ -134,7 +135,7 @@
                     <!--  mvn package docker:build -->
                     <!--  docker push hpe-mobile-boot/boot-skeleton -->
                     <!--  docker run -p 8080:8080 -t hpe-mobile-boot/boot-skeleton -->
-                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                    <imageName>${docker.hub.repository}/${docker.image.prefix}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
                         <resource>

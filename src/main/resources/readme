@@ -22,7 +22,7 @@ java  -jar target\boot-skeleton-1.0-SNAPSHOT.jar --server.address=localhost --po
 
 
 mvn package docker:build
-docker push hpe-mobile-boot/boot-skeleton
+docker push orasio/hpe-mobile-boot
 #after the push
 #thanks to relaxed binding  of boot we can used underscore
-docker run -e "SERVER_ADDRESS=192.168.99.100"  -e "SERVER_PORT=8080"  -p 8080:8080 -it hpe-mobile-boot/boot-skeleton
+docker run -e "SERVER_ADDRESS=192.168.99.100"  -e "SERVER_PORT=8080"  -p 8080:8080 -it  orasio/hpe-mobile-boot
