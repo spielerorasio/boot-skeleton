@@ -1,0 +1,22 @@
+docker run --name hpemcRedis -d -it  -p 6379:6379 redis:latest
+docker run --name hpemcPostgres -it -p 5432:5432  -e POSTGRES_USER=hpemc -e POSTGRES_PASSWORD=password -e POSTGRES_DB=hpemc -d postgres:9.3
+docker run -d -it  -p 5672:5672   -p 15672:15672   --hostname hpemc-rabbit --name hpemcRabbit  -e RABBITMQ_ERLANG_COOKIE='ABCDABCD'  -e RABBITMQ_DEFAULT_USER=hpemc -e RABBITMQ_DEFAULT_PASS=password  rabbitmq:3-management
+docker run -e "POSTGRES_ADDRESS=192.168.99.100"  -e "REDIS_ADDRESS=192.168.99.100" -e "RABBITMQ_ADDRESS=192.168.99.100" -e "SERVER_PORT=8080"  -p 8080:8080 -it hpe-mobile-boot/boot-skeleton
+docker run -e "SERVER_ADDRESS=192.168.99.100"  -e "SERVER_PORT=9090"  -p 9090:9090 -it hpe-mobile-boot/boot-skeleton
+docker run -e "SERVER_ADDRESS=192.168.99.100"  -e "SERVER_PORT=8888"  -p 8888:8888 -it hpe-mobile-boot/boot-skeleton
+java  -jar target\boot-skeleton-1.0-SNAPSHOT.jar --POSTGRES.address=192.168.99.100 --REDIS.address=192.168.99.100 --RABBITMQ.address=192.168.99.100
+
+
+
+we need
+spring-boot-starter-mail
+spring-boot-starter-redis
+
+
+
+we have 
+spring-boot-starter-amqp
+spring-boot-starter-data-jpa
+spring-boot-starter-test
+spring-boot-starter-logging                      Logback
+

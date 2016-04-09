@@ -1,0 +1,12 @@
+com\hp\mobile\service\DeviceService.class
+com\hp\mobile\domain\Device.class
+com\hp\mobile\redis\CacheClientImpl.class
+com\hp\mobile\session\replication\HttpSessionConfig.class
+com\hp\mobile\Application.class
+com\hp\mobile\amqp\MessageSender.class
+com\hp\mobile\amqp\MessageConfiguration.class
+com\hp\mobile\controller\DeviceController.class
+com\hp\mobile\service\DeviceServiceImpl.class
+com\hp\mobile\amqp\MessageReceiver.class
+com\hp\mobile\redis\CacheClient.class
+com\hp\mobile\service\DeviceRepository.class

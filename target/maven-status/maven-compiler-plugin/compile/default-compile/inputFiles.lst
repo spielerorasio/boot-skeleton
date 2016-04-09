@@ -1,0 +1,12 @@
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\session\replication\HttpSessionConfig.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\domain\Device.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\redis\CacheClientImpl.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\service\DeviceServiceImpl.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\amqp\MessageSender.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\amqp\MessageReceiver.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\redis\CacheClient.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\amqp\MessageConfiguration.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\service\DeviceRepository.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\controller\DeviceController.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\Application.java
+C:\dev\workspace\boot-skeleton\src\main\java\com\hp\mobile\service\DeviceService.java
