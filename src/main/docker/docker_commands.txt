@@ -20,3 +20,5 @@ spring-boot-starter-logging                      Logback
 spring-boot-starter-redis
 
 
+docker run --name firstHPEMC -e "ddl=create-drop" -e "POSTGRES_ADDRESS=192.168.99.100"  -e "REDIS_ADDRESS=192.168.99.100" -e "RABBITMQ_ADDRESS=192.168.99.100" -e "SERVER_PORT=8080"  -p 8080:8080 -d  -it orasio/hpe-mobile-boot
+docker run --name secondHPEMC   -e "POSTGRES_ADDRESS=192.168.99.100"  -e "REDIS_ADDRESS=192.168.99.100" -e "RABBITMQ_ADDRESS=192.168.99.100" -e "SERVER_PORT=9090"  -p 9090:9090 -d  -it orasio/hpe-mobile-boot

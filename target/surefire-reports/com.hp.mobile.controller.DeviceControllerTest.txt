@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.hp.mobile.controller.DeviceControllerTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.425 sec - in com.hp.mobile.controller.DeviceControllerTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2 sec - in com.hp.mobile.controller.DeviceControllerTest
