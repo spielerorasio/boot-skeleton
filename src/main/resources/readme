@@ -18,7 +18,7 @@ SET DOCKER_MACHINE_NAME=default
 
 mvn clean install spring-boot:run --server.address=192.168.99.100
 java  -jar target\boot-skeleton-1.0-SNAPSHOT.jar --server.address=192.168.99.100
-java  -jar target\boot-skeleton-1.0-SNAPSHOT.jar --server.address=localhost --postgres.address=192.168.99.100 --redis.address=192.168.99.100 --rabbitmq.address=192.168.99.100
+java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=y -jar target\boot-skeleton-1.0-SNAPSHOT.jar  --postgres.address=192.168.99.100 --redis.address=192.168.99.100 --rabbitmq.address=192.168.99.100 --ddl=create-drop
 
 
 mvn package docker:build
