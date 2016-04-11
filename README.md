@@ -44,7 +44,7 @@ improve tests => spring-boot-starter-test
 
 Installation On Windows
 	1. install docker toolbox https://docs.docker.com/windows/step_one/
-	2. open command and run docker-machine create -d virtualbox --engine-env HTTP_PROXY=http://web-proxy.il.hpecorp.net:8080 --engine-env HTTPS_PROXY=http://web-proxy.il.hpecorp.net:8080 --engine-env NO_PROXY=192.168.99.100   default
+	2. open command and run docker-machine create -d virtualbox --engine-env HTTP_PROXY=http://proxy:8080 --engine-env HTTPS_PROXY=http://proxy:8080 --engine-env NO_PROXY=192.168.99.100   default
 	3. add the following windows environemnt system properties
 
 		DOCKER_TLS_VERIFY=1
@@ -52,7 +52,7 @@ Installation On Windows
 		DOCKER_CERT_PATH=C:\Users\<user>\.docker\machine\machines\default
 		DOCKER_MACHINE_NAME=default
 
-		HTTP_PROXY=http://web-proxy.il.hpecorp.net:8080
-		HTTPS_PROXY=http://web-proxy.il.hpecorp.net:8080
+		HTTP_PROXY=http://proxy:8080
+		HTTPS_PROXY=http://proxy:8080
 		NO_PROXY=192.168.99.100
 
