@@ -70,8 +70,10 @@ endpoints to invoke
 
 	http://192.168.99.100:8888/
 	
-	http://192.168.99.100:8888/device/all			Actuator endpoints (see more
-								http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints)
+	http://192.168.99.100:8888/device/all			
+	
+	Actuator endpoints (see more			http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints)
+	
 								
 	http://192.168.99.100:8888/logfile			Returns the contents of the logfile
 	
