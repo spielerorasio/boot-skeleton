@@ -1,3 +1,28 @@
+
+
+Installation On Windows behind proxy
+
+	1. install docker toolbox https://docs.docker.com/windows/step_one/   stop after wizard installation
+
+
+	2. add the following windows environemnt system properties
+
+		DOCKER_TLS_VERIFY=1
+		DOCKER_HOST=tcp://192.168.99.100:2376
+		DOCKER_CERT_PATH=C:\Users\<user>\.docker\machine\machines\default
+		DOCKER_MACHINE_NAME=default
+
+		HTTP_PROXY=http://proxy:8080
+		HTTPS_PROXY=http://proxy:8080
+		NO_PROXY=192.168.99.100
+
+
+	3. open command and run docker-machine create -d virtualbox --engine-env HTTP_PROXY=http://proxy:8080 --engine-env HTTPS_PROXY=http://proxy:8080 --engine-env NO_PROXY=192.168.99.100   default
+
+
+
+
+
 How to build the environemnt
 
 	docker run --name hpemcRedis -d -it  -p 6379:6379 redis:latest
@@ -14,7 +39,7 @@ How to run maven docker plugin
 	docker push orasio/hpe-mobile-boot
 
 
-how to run locally
+How to build and run locally
 
 	mvn clean install  
 	java  -jar target\boot-skeleton-1.0-SNAPSHOT.jar --postgres.address=192.168.99.100 --redis.address=192.168.99.100 --rabbitmq.address=192.168.99.100 --ddl=create-drop
@@ -22,7 +47,8 @@ how to run locally
 
 
 
-we did we build
+What did we build
+
 spring boot project
 		
 		jetty
@@ -35,27 +61,29 @@ spring boot project
 		Logback logging
 		testng+hsql
  
-we need more
+We need more
 add spring-boot-starter-mail
 improve tests => spring-boot-starter-test
 
 
+endpoints to invoke
+
+http://192.168.99.100:8888/
+http://192.168.99.100:8888/device/all
+
+Actuator endpoints (see more http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints)
+http://192.168.99.100:8888/logfile			Returns the contents of the logfile
+http://192.168.99.100:8888/health			Shows application health information
+http://192.168.99.100:8888/autoconfig 			auto-configuration report 
+http://192.168.99.100:8888/beans			a complete list of all the Spring beans 
+http://192.168.99.100:8888/dump				Performs a thread dump.
+http://192.168.99.100:8888/env				Exposes properties from Spring’s ConfigurableEnvironment.
+http://192.168.99.100:8888/info				Displays arbitrary application info.
+http://192.168.99.100:8888/metrics			Shows ‘metrics’ information for the current application.
+http://192.168.99.100:8888/shutdown			Allows the application to be gracefully shutdown
 
 
-Installation On Windows
 
-	1. install docker toolbox https://docs.docker.com/windows/step_one/
 
-	2. open command and run docker-machine create -d virtualbox --engine-env HTTP_PROXY=http://proxy:8080 --engine-env HTTPS_PROXY=http://proxy:8080 --engine-env NO_PROXY=192.168.99.100   default
 
-	3. add the following windows environemnt system properties
-
-		DOCKER_TLS_VERIFY=1
-		DOCKER_HOST=tcp://192.168.99.100:2376
-		DOCKER_CERT_PATH=C:\Users\<user>\.docker\machine\machines\default
-		DOCKER_MACHINE_NAME=default
-
-		HTTP_PROXY=http://proxy:8080
-		HTTPS_PROXY=http://proxy:8080
-		NO_PROXY=192.168.99.100
 
