@@ -2,7 +2,7 @@
 
 Installation On Windows behind proxy
 
-	1. install docker toolbox https://docs.docker.com/windows/step_one/   stop after wizard installation
+	1. install docker toolbox https://docs.docker.com/windows/step_one/  instalNDIS5 and stop after wizard installation
 
 
 	2. add the following windows environemnt system properties
@@ -18,6 +18,8 @@ Installation On Windows behind proxy
 
 
 	3. open command and run docker-machine create -d virtualbox --engine-env HTTP_PROXY=http://proxy:8080 --engine-env HTTPS_PROXY=http://proxy:8080 --engine-env NO_PROXY=192.168.99.100   default
+	4. Add to windows hosts file usually under system32/drivers/etc
+		192.168.99.100	locahost
 
 
 
