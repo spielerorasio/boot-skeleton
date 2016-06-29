@@ -1,0 +1,30 @@
+version: '2'
+services:
+  server:
+    build: .
+    ports:
+     - "5000:5000"
+    depends_on:
+     - redis
+     - db
+     - queue
+  redis:
+    image: redis
+  queue:
+    image: rabbitmq:3-management
+    environment:
+      - RABBITMQ_ERLANG_COOKIE='ABCDABCD'
+      - RABBITMQ_DEFAULT_USER=hpemc
+      - RABBITMQ_DEFAULT_PASS=password
+    ports:
+     - "5672:5672"
+     - "15672:15672"
+  db:
+    image: postgres
+    ports:
+     - "5432:5432"
+    environment:
+      - POSTGRES_USER=hpemc
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=hpemc
+
